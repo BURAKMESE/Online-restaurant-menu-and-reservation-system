@@ -1,0 +1,187 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.menu-item p {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#reservation-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#reservation-form input[type="text"],
+#reservation-form input[type="email"],
+#reservation-form input[type="tel"],
+#reservation-form input[type="date"],
+#reservation-form input[type="time"],
+#reservation-form input[type="number"],
+#reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#reservation-form textarea {
+    resize: vertical; /* Dikey boyutlandırma */
+}
+
+#reservation-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#reservation-form button:hover {
+    background-color: #555;
+}
+
+/* Basit Form Validasyonu */
+#reservation-form input:invalid,
+#reservation-form textarea:invalid {
+    border-color: #ff9999;
+}
+#reservation-heading {
+    text-align: center; /* Metni ortala */
+}
+#feedback-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#feedback-form input[type="text"],
+#feedback-form input[type="email"],
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#feedback-form textarea {
+    resize: vertical; /* Dikey boyutlandırma */
+}
+
+#feedback-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#feedback-form button:hover {
+    background-color: #555;
+}
+
+/* Basit Form Validasyonu */
+#feedback-form input:invalid,
+#feedback-form textarea:invalid {
+    border-color: #ff9999;
+}
+#feed-back {
+    text-align: center; /* Metni ortala */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
